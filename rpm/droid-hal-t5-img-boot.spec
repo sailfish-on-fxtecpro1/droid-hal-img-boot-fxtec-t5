@@ -5,7 +5,7 @@
 %define root_part_label userdata
 %define factory_part_label system_b
 
-%define display_brightness_path /sys/class/leds/lcd-backlight/max_brightness
+%define display_brightness_path /sys/devices/soc/c900000.qcom,mdss_mdp/c900000.qcom,mdss_mdp:qcom,mdss_fb_primary/leds/lcd-backlight/brightness
 %define display_brightness 255
 
 %include initrd/droid-hal-device-img-boot.inc
